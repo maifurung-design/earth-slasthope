@@ -245,3 +245,48 @@ header [data-template-id="nav-donate"] {
   background-color: #b6e33b !important;
   color: #172313 !important;
 }
+/* MOBILE RESPONSIVE FIXES */
+@media (max-width: 768px) {
+  /* Prevent horizontal scrolling on mobile */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Scale down massive hero text */
+  .font-bold-62 {
+    font-size: 36px !important;
+    line-height: 1.1 !important;
+  }
+
+  .hero-brand-title {
+    font-size: 32px !important;
+  }
+
+  /* Adjust navigation bar layout */
+  header nav {
+    justify-content: center !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  header nav div {
+    gap: 12px !important;
+    justify-content: center;
+  }
+
+  .nav-link-custom,
+  .nav-donate-btn {
+    font-size: 16px !important;
+    padding: 6px 14px !important;
+  }
+
+  /* Fix height of trailer video container on smaller displays */
+  .hero div.relative.h-\[600px\] {
+    height: 280px !important;
+  }
+
+  /* Fix threat profile image container height on mobile */
+  #descriptions [data-description] > div {
+    min-height: 280px !important;
+  }
+}
