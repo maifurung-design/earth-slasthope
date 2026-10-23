@@ -21,8 +21,8 @@
   <!-- FULLSCREEN BACKGROUND VIDEO -->
   <div class="video-bg-container">
     <video autoplay muted loop playsinline webkit-playsinline class="video-bg">
-  <source src="bg-video.mp4" type="video/mp4">
-</video>
+      <source src="bg-video.mp4" type="video/mp4">
+    </video>
     <div class="video-overlay"></div>
   </div>
 
@@ -221,28 +221,26 @@
       <div class="mx-auto max-w-7xl">
         <p data-template-id="donate-eyebrow" class="canva-text mb-3 text-xs font-bold uppercase tracking-[.2em] text-lime font-regular-12">Support the mission</p>
         <h2 data-template-id="donate-title" class="canva-text display mb-4 text-cream font-bold-24">Help the journey grow</h2>
-        <p data-template-id="donate-note" class="canva-text mb-9 max-w-2xl leading-relaxed text-[#cbd5e1] font-regular-16">Choose an official campaign payment option. The QR panels below are placeholders, not scannable payment codes.</p>
+        <p data-template-id="donate-note" class="canva-text mb-9 max-w-2xl leading-relaxed text-[#cbd5e1] font-regular-16">Scan or download the official QR codes below to send your contribution directly.</p>
         
         <div class="grid gap-5 md:grid-cols-2">
           <!-- AUB Card -->
-          <article data-template-id="aub-card" class="canva-card rounded-2xl p-6 shadow-lg md:p-8 card-bg">
-            <h3 data-template-id="aub-title" class="canva-text display mb-5 text-cream font-bold-19">Donate via AUB</h3>
-            <div class="flex min-h-48 items-center justify-center rounded-xl border-2 border-dashed border-[#475569] bg-[#0f172a]/80 p-5">
-              <div class="text-center">
-                <div aria-hidden="true" class="qr-mark mx-auto mb-4 h-16 w-16 rounded-md border-4 border-white"></div>
-                <p data-template-id="aub-placeholder" class="canva-text font-bold text-cream font-regular-16">Official AUB QR placeholder</p>
+          <article data-template-id="aub-card" class="canva-card rounded-2xl p-6 shadow-lg md:p-8 card-bg flex flex-col justify-between">
+            <div>
+              <h3 data-template-id="aub-title" class="canva-text display mb-5 text-cream font-bold-19">Donate via AUB</h3>
+              <div class="flex min-h-[280px] w-full items-center justify-center rounded-xl border border-[#334155]/80 bg-[#0f172a]/90 p-4 shadow-inner overflow-hidden">
+                <img src="aub.jpeg" alt="AUB QR Code" class="max-h-[260px] w-auto object-contain rounded-lg shadow-md">
               </div>
             </div>
             <button type="button" data-template-id="aub-button" class="donation-trigger canva-button mt-6 w-full rounded-lg px-5 py-3 font-bold transition hover:brightness-110 btn-primary">AUB donation information</button>
           </article>
 
           <!-- GCash Card -->
-          <article data-template-id="gcash-card" class="canva-card rounded-2xl p-6 shadow-lg md:p-8 card-bg">
-            <h3 data-template-id="gcash-title" class="canva-text display mb-5 text-cream font-bold-19">Donate via GCash</h3>
-            <div class="flex min-h-48 items-center justify-center rounded-xl border-2 border-dashed border-[#475569] bg-[#0f172a]/80 p-5">
-              <div class="text-center">
-                <div aria-hidden="true" class="qr-mark mx-auto mb-4 h-16 w-16 rounded-md border-4 border-white"></div>
-                <p data-template-id="gcash-placeholder" class="canva-text font-bold text-cream font-regular-16">Official GCash QR placeholder</p>
+          <article data-template-id="gcash-card" class="canva-card rounded-2xl p-6 shadow-lg md:p-8 card-bg flex flex-col justify-between">
+            <div>
+              <h3 data-template-id="gcash-title" class="canva-text display mb-5 text-cream font-bold-19">Donate via GCash</h3>
+              <div class="flex min-h-[280px] w-full items-center justify-center rounded-xl border border-[#334155]/80 bg-[#0f172a]/90 p-4 shadow-inner overflow-hidden">
+                <img src="gcash.jpeg" alt="GCash QR Code" class="max-h-[260px] w-auto object-contain rounded-lg shadow-md">
               </div>
             </div>
             <button type="button" data-template-id="gcash-button" class="donation-trigger canva-button mt-6 w-full rounded-lg px-5 py-3 font-bold transition hover:brightness-110 btn-primary">GCash donation information</button>
@@ -311,8 +309,8 @@
   <!-- MODAL DIALOG -->
   <div id="donation-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#06110bdd] p-5" role="presentation">
     <div role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-copy" class="w-full max-w-md rounded-2xl border border-[#334155] bg-[#0f172a] p-7 text-[#f8fafc] shadow-2xl">
-      <h2 id="modal-title" data-template-id="modal-title" class="canva-text display mb-4 text-cream font-bold-24">Use the official campaign details</h2>
-      <p id="modal-copy" data-template-id="modal-copy" class="canva-text leading-relaxed text-[#cbd5e1] font-regular-16">This panel is a placeholder, not a payment QR code. Please scan the official QR code from the campaign materials, or replace this placeholder with the verified campaign QR code or link before accepting donations.</p>
+      <h2 id="modal-title" data-template-id="modal-title" class="canva-text display mb-4 text-cream font-bold-24">Official Campaign Details</h2>
+      <p id="modal-copy" data-template-id="modal-copy" class="canva-text leading-relaxed text-[#cbd5e1] font-regular-16">Scan the QR code displayed on the card directly using your banking or mobile wallet app to send your contribution.</p>
       <button id="modal-close" type="button" data-template-id="modal-close" class="canva-button mt-7 rounded-lg px-6 py-3 font-bold btn-primary">Got it</button>
     </div>
   </div>
